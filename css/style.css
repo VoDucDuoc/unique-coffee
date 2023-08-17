@@ -82,7 +82,7 @@ section {
     z-index: 1000;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding: 2rem 9%;
+    padding: 1rem 9%;
 }
 
 .header .logo {
@@ -116,7 +116,7 @@ section {
 .home {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/home-bg.jpg) no-repeat;
+    background: url(../image/home-bg.jpeg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -253,7 +253,7 @@ section {
 
 /* MENU */
 
-.menu {
+.bgImg {
     background: url(../image/menu-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -348,9 +348,8 @@ section {
 }
 
 .review .review-slider .box img {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
+    height: 100%;
+    width: 100%;
     margin-bottom: .7rem;
 }
 
@@ -432,6 +431,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 1.5rem;
+    text-align: center;
 }
 
 .footer .box-container .box h3 {
@@ -445,6 +445,8 @@ section {
     font-size: 1.5rem;
     padding: 1rem 0;
     color: var(--main-color);
+    width: 250px;
+    margin: 0 auto;
 }
 
 .footer .box-container .box a i {
@@ -457,14 +459,16 @@ section {
 
 .footer .credit {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 2rem 1rem;
     margin-top: 1rem;
     color: var(--main-color);
+    text-transform: lowercase;
 }
 
 .footer .credit span {
     border-bottom: var(--border-hover);
+    text-transform: lowercase;
 }
 
 .logoImg {
@@ -504,12 +508,17 @@ section {
         font-size: 55%;
     }
 
-    .header {
-        padding: 3rem;
-    }
-
     section {
         padding: 2rem;
+    }
+    .header {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 1.5rem
     }
 }
 
@@ -569,6 +578,14 @@ section {
         margin-left: 0;
         margin-top: -6rem;
     }
+
+    .logoImg {
+        width: 70px; height: 70px; 
+    }
+    
+    .header {
+        padding: 1.5rem
+    }
 }
 
 @media (max-width: 450px) {
@@ -580,4 +597,9 @@ section {
         height: auto;
         width: 100%;
     }
+
+    .logoImg {
+        width: 50px; height: 50px; 
+    }
+
 }
