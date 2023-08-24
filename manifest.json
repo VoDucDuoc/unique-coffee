@@ -1,0 +1,10 @@
+{
+  "short_name": "UniCoffee",
+  "name": "UniCoffee 360View",
+  "icons": [
+  ],
+  "start_url": "/",
+  "background_color": "#d1005c",
+  "display": "standalone",
+  "theme_color": "#d1005c"
+}
